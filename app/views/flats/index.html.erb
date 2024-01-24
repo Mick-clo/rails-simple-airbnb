@@ -1,0 +1,23 @@
+<% @flats.each do |flat| %>
+<div class="col-md-4">
+  <div class="flat-card">
+    <div class="flat-card-image" style="background-image: url('https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=')">
+    </div>
+    <div class="flat-card-content">
+      <div class="flat-card-title">
+        <h4><%= flat.name %></h4>
+      </div>
+      <p><%= flat.address %></p>
+      <div class="flex">
+        <div class="flex align-items-center">
+          <i class="fa-solid fa-people-line"></i>
+          <span><%= flat.number_of_guests %></span>
+        </div>
+        <div class="flex align-items-center ms-3">
+          <i class="fa-solid fa-euro-sign"></i>
+          <span><%= flat.price_per_night %></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
